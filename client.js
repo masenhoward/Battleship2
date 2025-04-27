@@ -7,7 +7,7 @@ let draggedShip = null;
 const placedShips = new Map(); // Tracks which ships have been placed
 
 // Socket.io connection - use existing global socket or create new one
-let socket = window.socket || io("http://localhost:3000");
+let socket = window.socket || io();
 let gameCode;
 let currentTurn = null;
 
